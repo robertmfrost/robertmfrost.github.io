@@ -1,0 +1,21 @@
+.quote {
+  background-color: rgba(0,0,0,.1);
+  border-radius: .25rem;
+  color: rgba(0,0,0,.5);
+  padding: 1rem;
+
+  &:after,
+  &:before {
+    content: "\"";
+  }
+}
+
+.source {
+  color: rgba(0,0,0,.5);
+  font-size: .75rem;
+  text-align: right;
+
+  &:before {
+    content: "~"
+  }
+}

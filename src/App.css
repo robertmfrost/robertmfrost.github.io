@@ -1,0 +1,33 @@
+/* * {
+  all: unset;
+  box-sizing: border-box;
+  display: block;
+} */
+
+head,
+style,
+script {
+  display: none;
+}
+
+html {
+  font-size: 24px;
+  background-image: url(https://lh3.googleusercontent.com/pw/ACtC-3fFOvlERatklWhlE5gbcOhMxBjPvYlyEukh2UTCCyya7i2upSYEnf0xy9uKnPBg45nWJLShtatMGt3y7hLO2k_MVZmt_fg0zi9Sxu-O9T9z-y2nPUP3dUE_i6jlOQzyaq57hyHBB75YlolFF4BMjgBv=w1643-h1097-no?authuser=0);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  min-height: 100%;
+  color: white;
+}
+
+body {
+  font-family: 'Handlee', cursive;
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
