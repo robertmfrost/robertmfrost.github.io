@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 // Routes
@@ -14,9 +14,11 @@ const routes = {
 function App() {
   return (
     <Router>
-      {Object.keys(routes).map(path => (
-        <Route key={path} path={`/${path}`} component={routes[path]} />
-      ))}
+      <Switch>
+        {Object.keys(routes).map(path => (
+          <Route key={path} exact path={path === 'table-of-contents' ? '' : `#${path}`} component={routes[path]} />
+        ))}
+      </Switch>
     </Router>
   );
 }

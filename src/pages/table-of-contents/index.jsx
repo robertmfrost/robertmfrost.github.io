@@ -11,7 +11,7 @@ const TableOfContents = () => {
       </Container>
       <Container grid>
         {toc.map(item => (
-          <Container key={toc.indexOf(item)} panel link={item.link}>
+          <Container key={toc.indexOf(item)} panel link={`#${item.link}`}>
             <small>Lesson {item.lesson}</small>
             <p>{item.title}</p>
           </Container>
