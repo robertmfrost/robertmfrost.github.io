@@ -5,6 +5,7 @@ import './App.css';
 // Routes
 import NaturalLaw from './pages/natural-law';
 import TableOfContents from './pages/table-of-contents';
+import PageNotFound from './pages/page-not-found';
 
 const routes = {
   "table-of-contents": TableOfContents,
@@ -15,9 +16,11 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route exact path="/" component={PageNotFound} />
         {Object.keys(routes).map(path => (
-          <Route key={path} exact path={path === 'table-of-contents' ? '' : `#${path}`} component={routes[path]} />
+          <Route key={path} exact path={`/${path}`} component={routes[path]} />
         ))}
+        <Route component={PageNotFound} />
       </Switch>
     </Router>
   );
