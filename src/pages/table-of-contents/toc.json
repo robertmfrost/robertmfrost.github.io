@@ -1,5 +1,5 @@
 {
-  "toc": [
+  "natural-laws": [
     {
       "lesson": 1,
       "title": "Natural Law",
@@ -39,6 +39,33 @@
       "lesson": 8,
       "title": "Natural Law of Correspondence",
       "link": "natural-law-of-correspondence"
+    }
+  ],
+  "mathematics": [
+    {
+      "lesson": 1,
+      "title": "Math",
+      "link": "math"
+    },
+    {
+      "lesson": 2,
+      "title": "Systems of Measurement",
+      "link": "systems-of-measurement"
+    },
+    {
+      "lesson": 3,
+      "title": "Geometry and Shapes",
+      "link": "geometry-and-shapes"
+    },
+    {
+      "lesson": 4,
+      "title": "Frequency and Sound",
+      "link": "frequency-and-sound"
+    },
+    {
+      "lesson": 5,
+      "title": "Time and Space",
+      "link": "time-and-space"
     }
   ]
 }

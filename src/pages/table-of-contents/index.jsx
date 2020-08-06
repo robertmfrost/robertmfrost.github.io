@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../../common/Container';
-import { toc } from './toc.json';
+import toc from './toc.json';
 
 const TableOfContents = () => {
   return (
@@ -10,8 +10,19 @@ const TableOfContents = () => {
         <h2>Natural Laws</h2>
       </Container>
       <Container grid>
-        {toc.map(item => (
-          <Container key={toc.indexOf(item)} panel link={`/${item.link}`}>
+        {toc['natural-laws'].map(item => (
+          <Container key={toc['natural-laws'].indexOf(item)} panel link={`/${item.link}`}>
+            <small>Lesson {item.lesson}</small>
+            <p>{item.title}</p>
+          </Container>
+        ))}
+      </Container>
+      <Container>
+        <h2>Mathematics</h2>
+      </Container>
+      <Container grid>
+        {toc['mathematics'].map(item => (
+          <Container key={toc['mathematics'].indexOf(item)} panel link={`/${item.link}`}>
             <small>Lesson {item.lesson}</small>
             <p>{item.title}</p>
           </Container>

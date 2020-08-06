@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={PageNotFound} />
+        <Route exact path="/" component={TableOfContents} />
         {Object.keys(routes).map(path => (
           <Route key={path} exact path={`/${path}`} component={routes[path]} />
         ))}
